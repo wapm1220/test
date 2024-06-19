@@ -1,0 +1,20 @@
+server:
+  port: 8002
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: itheima123
+  application:
+    name: lockTest
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dlock
+    username: root
+    password: root
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    auto-mapping-behavior: full
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
